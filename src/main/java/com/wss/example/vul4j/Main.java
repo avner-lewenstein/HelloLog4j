@@ -8,10 +8,12 @@ public class Main {
     private static Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) throws InterruptedException {
-        logger.info("Hello world");
+        for (int i= 0; i < 100; i++) {
+            logger.info("Hello world");
 
-        final JSONObject jsonObject = new JSONObject("{\"x\": \"y\", \"z\": [1, 2, 3]}");
-        System.out.println(jsonObject.getJSONArray("z").length());
-        Thread.sleep(60000);
+            final JSONObject jsonObject = new JSONObject("{\"x\": \"y\", \"z\": [1, 2, 3]}");
+            System.out.println(jsonObject.getJSONArray("z").length());
+            Thread.sleep(5000);
+        }
     }
 }
