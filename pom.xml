@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20160807</version>
+            <version>20180130</version>
         </dependency>
     </dependencies>
     <build>
